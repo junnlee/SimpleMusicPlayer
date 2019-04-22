@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">SimpleMusicPlayer</string>
+
+    <string name="find">发现</string>
+    <string name="music">音乐</string>
+    <string name="video">视频</string>
+    <string name="user">我的</string>
+    <string name="setting">设置</string>
+
+
+    <string-array name="fragment_titles">
+        <item>@string/find</item>
+        <item>@string/music</item>
+        <item>@string/video</item>
+        <item>@string/user</item>
+        <item>@string/setting</item>
+    </string-array>
+
+</resources>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".ui.main.MainActivity">
+    
+    <com.player.simplemusicplayer.ui.common.CustomToolbar
+        android:id="@+id/main_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/toolbar_height"
+        android:minHeight="@dimen/toolbar_height"
+        app:titleTextAppearance="@style/toolbar"
+        app:maxButtonHeight="17dp"
+        android:background="@color/toolbar_background_color">
+    </com.player.simplemusicplayer.ui.common.CustomToolbar>
+
+
+    <com.player.simplemusicplayer.ui.common.ScrollableViewPager
+        android:id="@+id/main_viewpager"
+        android:layout_below="@id/main_toolbar"
+        android:layout_above="@+id/item_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </com.player.simplemusicplayer.ui.common.ScrollableViewPager>
+
+    <ImageView
+        android:id="@+id/item_view"
+        android:layout_width="match_parent"
+        android:layout_above="@+id/main_tabbar"
+        android:layout_height="0.5dp"
+        android:background="@color/tab_line"/>
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/main_tabbar"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:tabGravity="fill"
+        app:tabBackground="@null"
+        app:tabRippleColor="@null"
+        app:tabSelectedTextColor="@color/tab_selected_color"
+        app:tabTextColor="@color/tab_text"
+        app:tabIndicatorHeight="0dp"/>
+
+
+</RelativeLayout>
